@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register|nephelometer</title>
+
+    <script
+      src="https://kit.fontawesome.com/a64131ba24.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../css/register.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="logo">
+          <a href="../index.html" class="logo">nephelometer</a>
+        </div>
+        <div class="register">
+          <button class="btn__user">
+            <span><i class="fa-solid fa-user"></i></span> Register
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="wrapper-p">
+      <div class="wrapper active-popup">
+        <span class="icon-close"><i class="fa-solid fa-xmark"></i></span>
+        <div class="form-box login">
+          <h2>Login</h2>
+          <form id="loginForm">
+            <div class="input-box">
+              <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+              <input type="email" id="email_login" name="email_login" />
+              <label for="email_login">Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="fa-solid fa-lock"></i></span>
+              <input
+                type="password"
+                id="password_login"
+                name="password_login"
+              />
+              <label for="password_login">Password</label>
+            </div>
+            <div class="remember-forgot">
+              <label
+                ><input type="checkbox" id="remember" name="remember" />
+                Remember me</label
+              >
+              <a href="#">Forgot password ?</a>
+            </div>
+            <button type="submit" class="btn" id="login_btn">Login</button>
+            <div class="login-register">
+              <p>
+                Don't have an account ?<a href="#" class="register-link"
+                  >Register</a
+                >
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <div class="form-box register">
+          <h2>Registration</h2>
+          <form id="registerForm">
+            <div class="input-box">
+              <span class="icon"><i class="fa-solid fa-user"></i></span>
+              <input type="text" id="username" name="username" />
+              <label>Username</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+              <input type="email" id="email_register" name="email_register" />
+              <label for="email_register">Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="fa-solid fa-lock"></i></span>
+              <input
+                type="password"
+                id="password_register"
+                name="password_register"
+              />
+              <label for="password_register">Password</label>
+            </div>
+            <div class="remember-forgot">
+              <label
+                ><input type="checkbox" id="terms" name="terms" /> I accepted
+                the terms & conditions</label
+              >
+            </div>
+            <button type="submit" class="btn" id="signup_btn">Register</button>
+            <div class="login-register">
+              <p>
+                Already have an account ?<a href="#" class="login-link"
+                  >Login</a
+                >
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/nav.js"></script>
+    <script src="../js/wrapper.js"></script>
+    <script src="../js/registation.js"></script>
+  </body>
+</html>

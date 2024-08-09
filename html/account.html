@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account</title>
+
+    <script
+      src="https://kit.fontawesome.com/a64131ba24.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/account.css" />
+  </head>
+  <body>
+    <header class="header" id="home">
+      <nav>
+        <div class="nav__bar">
+          <div class="logo nav__logo">
+            <a href="../index.html#">nephelometer</a>
+          </div>
+          <ul class="nav__links" id="nav-links">
+            <li><a href="../index.html#more">Explore</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="../index.html#footer">About Us</a></li>
+            <li id="account-open-nav">
+              <button id="accountButton_1" class="nav__action btn">
+                <span><i class="fa-solid fa-user"></i></span> Account
+              </button>
+            </li>
+          </ul>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="nav__action__btn">
+            <button id="accountButton_2" class="nav__action btn">
+              <span><i class="fa-solid fa-user"></i></span> Account
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- account -->
+      <div class="container">
+        <div class="card p-0">
+          <div class="card-image">
+            <img
+              src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt=""
+            />
+          </div>
+          <div class="card-content d-flex flex-column align-items-center">
+            <h4 class="pt-2" id="account_name">SomeOne Famous</h4>
+            <h5 id="account_email">Creative Desinger</h5>
+            <div class="account_analysis">
+              <div id="post_qty"><span>100</span> posts</div>
+              <div id="follower_qty"><span>100</span> followers</div>
+              <div id="add_btn">
+                <button><i class="fa-solid fa-circle-plus"></i></button>
+              </div>
+            </div>
+
+            <ul class="social-icons d-flex justify-content-center">
+              <li style="--i: 1">
+                <a href="#">
+                  <span class="fab fa-facebook"></span>
+                </a>
+              </li>
+              <li style="--i: 2">
+                <a href="#">
+                  <span class="fab fa-twitter"></span>
+                </a>
+              </li>
+              <li style="--i: 3">
+                <a href="#">
+                  <span class="fab fa-instagram"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="footer" id="footer">
+      <footer class="footer">
+        <div class="section__container footer__container">
+          <div class="footer__col">
+            <div class="logo footer__logo">
+              <a href="#">nephelometer</a>
+            </div>
+            <p>Get out there & discover your next destination!</p>
+          </div>
+          <div class="footer__col">
+            <h4>More on The Blog</h4>
+            <ul class="footer__links">
+              <li><a href="#">About The Creator</a></li>
+              <li><a href="#">Contributors & Writers</a></li>
+              <li><a href="#">Write For Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>More on nephelometer</h4>
+            <ul class="footer__links">
+              <li><a href="#">The Team</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Press</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bar">
+          Copyright © 2024 Le Minh Tien. All rights reserved.
+        </div>
+      </footer>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/account.js"></script>
+  </body>
+</html>
