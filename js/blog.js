@@ -32,7 +32,7 @@ function renderPost(container, post) {
 
   // Create the span for the date
   const spanDate = document.createElement("span");
-  spanDate.textContent = "20 January, 2020";
+  spanDate.textContent = "3 August, 2024";
 
   // Create the h2 element for the title
   const h2 = document.createElement("h2");

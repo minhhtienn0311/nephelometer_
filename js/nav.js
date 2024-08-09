@@ -9,7 +9,7 @@ const login_url = window.location.href.includes("html/")
 const account_url = window.location.href.includes("html/")
   ? "./account.html"
   : "./html/account.html";
-const loginText = `<span><i class="fa-solid fa-user"></i></span> Login`;
+const loginText = `<span><i class="fa-solid fa-user"></i></span>  Account`;
 
 if (!current_user) {
   // neu khong co => hien thi chu login de nguoi dung biet
@@ -29,12 +29,12 @@ if (!current_user) {
   });
 } else {
   // neu da dang nhap => hien thi username cua nguoi dung
-  accountBtn_1 ? (accountBtn_1.innerHTML = current_user.username) : null;
+  accountBtn_1 ? (accountBtn_1.innerHTML = `<span><i class="fa-solid fa-user"></i></span>` + current_user.username) : null;
   accountBtn_1?.addEventListener("click", function () {
     window.location.href = account_url;
   });
 
-  accountBtn_2 ? (accountBtn_2.innerHTML = current_user.username) : null;
+  accountBtn_2 ? (accountBtn_2.innerHTML = `<span><i class="fa-solid fa-user"></i></span>` + current_user.username) : null;
   accountBtn_2?.addEventListener("click", function () {
     window.location.href = account_url;
   });
